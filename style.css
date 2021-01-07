@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;;
+}
+section{
+    height: 100vh;
+    
+}
+
+/* --------------------- ACCUEIL ----------------- */
+/* ------------------------ header ------------------ */
+header{
+    padding-top: 40px;  
+}
+nav a{
+    text-decoration: none;
+    margin-right: 6%;
+    color: #EAE0D5;
+}
+/* ------------------------ header ------------------ */
+#Accueil{
+    background: url("./images/backgroundAccueil.png") no-repeat center / cover;
+}
+
+/* ------- div contenant les éléments aux centres------ */
+.titreAccueil{
+    width: 60%;
+    margin: 180px 0 0 0;
+}
+.titreAccueil h1,
+.titreAccueil h2, 
+.titreAccueil p{
+    margin-bottom: 22px;
+}
+
+/* --------------Mise en forme des élements de .titreAccueil---------- */
+#Accueil h1{
+    font-weight: 900;
+    font-size: 53px;
+    color:#C6AC8F;
+}
+#Accueil h2{
+    color: #725D49;
+}
+.h2accueil{
+    font-weight: 900;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 125.5%;
+    letter-spacing: 0.03em;
+    color: black;
+}
+#Accueil p {
+    color:#EAE0D5;
+}
+.accueilName,
+#Accueil input{
+    color: #487f99;
+}
+
+p, 
+#Accueil input, 
+#Accueil nav a{
+    font-size: 20px;
+    letter-spacing: 0.075em;
+    font-weight: 300;
+    line-height: 156%;
+}
+/* ----bouton contact---- */
+#Accueil input{
+    margin-top: 15px;
+    padding: 16px 26px;
+    background: none;
+    border: 1.5px solid #437085;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+/* -------permet d'aligner les élément h1 h2 p Input--------- */
+#Accueil .titreAccueil,
+#Accueil nav,
+.containerProfil{
+    padding-left: 180px;
+}
+
+/* -------------Réseaux-------------- */
+.reseauxAccueil{
+    margin-top: 85px;
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+}
+.logoAccueil{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 6%;
+
+}
+
+/* ---------------------- PAGE PROFIL ------------------------- */
+h2{
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 125.5%;
+}
+.informations h2, .informations p,
+.containerProfil{
+    border: red solid 2px;
+    display: flex;
+    margin: 6% 0;
+    
+}
+.logoProfil{
+    display: flex;
+}
+
+.informations{
+    border: hotpink solid 2px;
+    width: 60%;
+}
+
+.logoskills,.logooutils{
+    border: mediumblue solid 2px;
+}
