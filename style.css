@@ -2,127 +2,276 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 section{
-    height: 100vh;
-    
+    min-height: 100vh;
 }
 
-/* --------------------- ACCUEIL ----------------- */
-/* ------------------------ header ------------------ */
-header{
-    padding-top: 40px;  
-}
 nav a{
+    color: white;
+    mix-blend-mode: difference;
+}
+
+h2{
+    padding: 5% 0;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 0.145em;
+}
+h1{
+    font-weight: 900;
+    font-size: 75px;
+    letter-spacing: 0.095em;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+h3{
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    padding-bottom: 2%;
+    color: #b1b0ad;
+}
+p, 
+input, 
+nav a,
+button{
+    font-size: 18px;
+    letter-spacing: 0.075em;
+    font-weight: 300;
+    line-height: 136%;
     text-decoration: none;
-    margin-right: 6%;
-    color: #EAE0D5;
 }
-/* ------------------------ header ------------------ */
+p,
+.designUI{
+    padding-bottom: 3%;
+} 
+#Profil p{
+    padding-top: 4%;
+}
+.accueilName{
+    color: #f57963;
+}
+
+.reseauxAccueil,
+header,
+.logoAccueil,
+nav,
+#Profil,
+.logoforces,
+.containerProjet,
+.card,
+#Contact,
+.titreProjets,
+#Contact footer,
+.contactContainer{
+    display: flex;
+}
+/* --------------------- ACCUEIL ----------------- */
 #Accueil{
-    background: url("./images/backgroundAccueil.png") no-repeat center / cover;
+    background: url("./images/page\ d\'accueil-min.png") no-repeat center / cover;
+    position: relative;
+
 }
+.containerAccueil:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 90px;
+    height: 0;
+    width: 0;
+    background: transparent;
+    border: 2px solid transparent;
+}
+.containerAccueil::before{
+    animation: animate 1.9s ease-in forwards;
+    animation-delay: 1000ms;
+}
+@keyframes animate{
+    0% {
+        width: 0;
+        height: 0;
+        border-left-color: transparent;
+    }
+    
+    99% {
+        width: 0;
+        height: 99%;
+        border-left-color: white;
+    }
+}
+
 
 /* ------- div contenant les éléments aux centres------ */
 .titreAccueil{
-    width: 60%;
-    margin: 180px 0 0 0;
+    width: 50%;
+    margin: 11% 0;
+    height: 33.5vh;
 }
-.titreAccueil h1,
-.titreAccueil h2, 
-.titreAccueil p{
-    margin-bottom: 22px;
-}
+.buttonAccueil{
+    color: #EAE0D5;
+    background: none;
+    border: solid 1px #EAE0D5;
 
-/* --------------Mise en forme des élements de .titreAccueil---------- */
-#Accueil h1{
-    font-weight: 900;
-    font-size: 53px;
-    color:#C6AC8F;
 }
-#Accueil h2{
-    color: #725D49;
-}
-.h2accueil{
-    font-weight: 900;
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 125.5%;
-    letter-spacing: 0.03em;
-    color: black;
-}
-#Accueil p {
-    color:#EAE0D5;
-}
-.accueilName,
-#Accueil input{
-    color: #487f99;
-}
-
-p, 
-#Accueil input, 
-#Accueil nav a{
-    font-size: 20px;
-    letter-spacing: 0.075em;
-    font-weight: 300;
-    line-height: 156%;
+.containerAccueil{
+    margin-left: 10%;
+    color: #EAE0D5;
 }
 /* ----bouton contact---- */
-#Accueil input{
-    margin-top: 15px;
-    padding: 16px 26px;
-    background: none;
-    border: 1.5px solid #437085;
-    border-radius: 3px;
+button{
+    width: 200px;
+    position: relative;
+    color: #EAE0D5;
+    padding: 13px 26px;
+    filter: drop-shadow(0px 9px 10px rgba(16, 12, 39, 0.2));
+    border-radius: 2px;
+    border: none;
+    background: rgba(94, 49, 174, 0.6);
     cursor: pointer;
-
+    outline: none;
+    overflow: hidden;
+}
+button::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top:-36px;
+    left:-100px;
+    background: rgb(255, 255, 255);
+    width: 50px;
+    height: 125px;
+    opacity: 20%;
+    transform: rotate(-45deg);
+}
+button:hover:after {
+    left: 120%;
+    transition: all 500ms cubic-bezier(0.3, 1, 0.2, 1);
+    -webkit-transition: all 600ms cubic-bezier(0.3, 1, 0.2, 1);
 }
 
-/* -------permet d'aligner les élément h1 h2 p Input--------- */
-#Accueil .titreAccueil,
-#Accueil nav,
-.containerProfil{
-    padding-left: 180px;
-}
 
-/* -------------Réseaux-------------- */
-.reseauxAccueil{
-    margin-top: 85px;
-    display: flex;
+
+
+/* -------------Réseaux et Header-------------- */
+.reseauxAccueil, 
+header{    
     justify-content: flex-end;
-    width: 90%;
+    width: 95%;
+    padding: 3% 0.5% 2% 3%;
 }
-.logoAccueil{
-    display: flex;
+.logoAccueil, nav{
     justify-content: space-between;
     align-items: center;
-    width: 6%;
-
+    width: 10%;
 }
+nav{
+    width: 39%;
+}
+/* --------- fin ACCUEIL -------- */
 
 /* ---------------------- PAGE PROFIL ------------------------- */
-h2{
-    font-weight: 900;
-    font-size: 35px;
-    line-height: 125.5%;
+#Profil{
+    justify-content: space-evenly;
+    align-items: center;
 }
-.informations h2, .informations p,
-.containerProfil{
-    border: red solid 2px;
-    display: flex;
-    margin: 6% 0;
-    
-}
+
+.informations,
 .logoProfil{
-    display: flex;
+    width: 580px;
+    height: 500px;
+}
+.logoforces{
+    border: solid 1px black;
+}
+.logoskills,
+.logooutils{
+    width: 50%;
 }
 
-.informations{
-    border: hotpink solid 2px;
-    width: 60%;
+/* ------- fin profil ------- */
+
+/* --------------- PROJETS ---------------- */
+#Projets button{
+    background: rgba(240, 91, 64, 0.8);
+}
+.degProf{
+    position: absolute;
 }
 
-.logoskills,.logooutils{
-    border: mediumblue solid 2px;
+/* ----------- cartes des projets ---------------- */
+.containerProjet{
+    flex-direction: column;
+    align-items: center;
+}
+.card{
+    justify-content: space-between;
+    text-align: right;
+    margin: 6% 0 0% 3%;
+    width: 70%;
+
+}
+.card img,
+.card2 img{
+    
+    width: 40%;
+    border-radius: 3px;
+}
+.card2{
+    text-align: left;
+}
+
+
+
+.infoProjet *,
+.containerAccueil h1,
+.containerAccueil h3,
+.containerAccueil p {
+    margin-top: 3%;
+}
+
+.card1 img{
+    margin-right: 3%;
+}
+/* --------------- FIN PROJETS ------------- */
+/* -------------- CONTACT ----------------- */
+#Contact{
+    background: url("./images/backgroundcontact-min.png") no-repeat center / cover;
+    color:#EAE0D5;
+}
+#Contact, 
+.titreProjets{
+text-align: center;
+flex-direction: column;
+justify-content: space-between;
+}
+
+#Contact footer{
+justify-content: center;
+height: 80px;
+}
+footer nav a,
+.logoforces img,
+#Contact p
+{
+    margin: 5%;
+}
+
+.contactContainer{
+width: 45%;
+margin: 0 auto;
+height: 600px;
+flex-direction: column;
+justify-content: center;
+}
+.contactButton button:first-child{
+    margin-right: 30px;
+}
+
+.logoRes a{
+    padding: 0px 10px;
+    
 }
