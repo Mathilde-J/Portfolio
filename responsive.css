@@ -1,0 +1,72 @@
+@media (max-width :870px ){
+    header,
+    #Projets img,
+    #Contact footer,
+    .containerAccueil::before{
+        display: none;
+    }
+
+    .containerProfil,
+    #Profil,
+    .card,
+    .card2{
+        display: block;
+    }
+    
+    /* ACCUEIL */
+    .containerAccueil::before{
+        content: none;
+    }
+    h1{
+        font-size: 5rem;
+    }
+    
+    .containerAccueil,
+    .titreAccueil,
+    #Profil p
+    {
+        margin: 0 auto;
+        padding-top: 2rem;
+    }
+    .titreAccueil,
+    #Profil .informations,
+    #Profil .Profil,
+    .contactContainer{
+        width: 95%;
+        height: 0%;
+        text-align: center;
+    }
+    .titreAccueil *{
+        margin-bottom: 2rem;
+    }
+    .reseauxAccueil{
+        justify-content: center;
+    }
+    .containerProjet,
+    .containerProjet div{
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+    .card1 img,
+    .Boutonjeu,
+    #Contact button {
+        margin-bottom: 4%;
+        margin-right: 0;
+    }
+    .forces li{
+        margin: 2rem 0 1rem 3rem;
+    }
+
+    /* PROFIL */
+    .containerProfil>div,
+    #Projets{
+        padding: 2.5rem 0 2.5rem 0;
+    }
+
+    /* CONTACT */
+    #Contact{
+        justify-content: center;
+    }
+
+
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathilde JANSSEN - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./animation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">   
+</head>
+<body>
+    <!-- ------------------------ ACCUEIL ------------------------ -->
+
+    <section id ="Accueil">
+        
+        <div class="containerAccueil"><header>
+            <nav >
+                <a href="#Accueil"><span>Accueil</span></a>
+                <a href="#Profil"><span>Profil</span></a>
+                <a href="#Projets"><span>Projets</span></a>
+                <a href="#Contact"><span>Contact</span></a>
+            </nav>
+        </header>
+            <div class="titreAccueil invisible">
+                <h1>HELLO </h1>
+                <h3>Je suis <span class="accueilName">M</span>athilde, développeuse en apprentissage.</h3>
+                <p>J'étudie actuellement à Ada Tech School et je suis à la recherche d'une alternance sur Paris à partir du 1er Juin 2021!</p>
+                <a href="mailto:mthldjanssen@gmail.com"><button class="buttonAccueil"> Me Contacter</button></a>
+            </div>
+            <div class="reseauxAccueil">
+                <div class="logoAccueil">
+                    <a href="https://www.linkedin.com/in/mathilde-janssen-9707681b9/" target="_blank"><img src="./images/ph_linkedin-logo-light.svg" alt="logo linkedin"></a>
+                    <a href="https://github.com/Mathilde-J" target="_blank"><img src="./images/ant-design_github-outlined.svg" alt="logo github"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------------ fin ACCUEIL ------------------------ -->
+<!-- ------------------------ #Profil ------------------------ -->
+    <section id="Profil">
+        <div class="containerProfil">
+            <div class="informations invisible">
+                <h2>À propos de moi</h2>
+                <p>Hello, moi c'est Mathilde ! Après des études en langue coréenne et une expérience d'un et demi en entreprise, j'ai eu l'opportunité de découvrir le domaine de l'informatique et notamment celui du développement lors de la formation Hackeuses de chez Simplon où j'ai adoré coder mon 1er site!</p>
+                <p>C'est suite à cela que j'ai décidé de m'inscrire à Ada Tech School où j'ai eu l'occasion de manipuler plusieurs technologies lors de projets en groupe et le tout en pratiquant les méthodes AGILES. </p>    
+                <p>Je suis curieuse, autonome et j'ai une appétence pour le développement front-end ainsi que l'UI et l'UX Design!</p>
+            </div>
+            <div class="Profil invisible">
+                <h2>Compétences et outils</h2>
+                <div class="forces">
+                   <ul>
+                       <li>Javascript</li>
+                       <li>HTML/CSS</li>
+                       <li>Python</li>
+                       <li>Bootstrap</li>
+                   </ul>
+                   <ul>
+                        <li>Github</li>
+                        <li>Figma</li>
+                        <li>Terminal</li>
+                        <li>VSCODE</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    </section>
+    <!-- ------------------------ SECTION PROJETS ------------------------ -->
+    <section id=Projets>
+        
+        <h2 class="titreProjets">Projets</h2>
+        <div class="containerProjet">
+            <div class="card card1 invisible">
+                <img  src="./images/wiacompressed.png" alt="">
+                <div class="infoProjet">
+                    <h2>Site Women in AI</h2>
+                    <p class="TechnoPj"> <B> Html, CSS, Figma, projet solo, 2 semaines, Juillet 2020</B> </p>
+                    <p>Création de site responsive sur le sujet "Et si les femmes prenaient le contrôle des technologies ?", avec création du wireframe ainsi que la maquette. </p>
+                    <p><b>Contraintes et difficultés :</b> Création du wireframe et la maquette, gérer le côté responsive. </p>
+                    <a target=_blank href="https://womeninai.netlify.app/#accueil"><button>Voir plus</button></a>
+                </div> 
+                
+               
+            </div>
+            <div class="card2 card invisible">
+                <div class="infoProjet">
+                    <h2>Jeu rétro sur Pico-8</h2>
+                    <p class="TechnoPj"> <b> Machine virtuelle Pico-8, langage LUA, Githubpages, projet en trinôme, 2 semaines, Novembre 2020 </b> </p>
+                    <p> Création d'un jeu rétro sur la machine <a class="Pico, accueilName" href="https://www.lexaloffle.com/pico-8.php" target="_blank">Pico-8</a> où le personnage évolue dans un labyrinthe afin de secourir le prince.</p>
+                    <p><b>Contraintes et difficultés :</b> Réalisation du projet en remote, gérer les collisions du personnage avec l'environnement, design en pixel art.</p>
+                    <a href="https://github.com/Mathilde-J/Labyrinth" target="_blank"><button class="Boutonjeu">Voir plus</button></a>
+                    <a href="https://mathilde-j.github.io/" target="_blank"> <button> Jouer</button></a>
+                </div> 
+                <img class="imgdroite" src="./images/jeupico8-min.gif" alt="">
+            </div>
+        
+            <div class="card card1 invisible">
+                <img src="./images/moviebot.PNG" alt="">
+                <div class="infoProjet">
+                    <h2>Chatbot recommandation de films</h2>
+                    <p class="TechnoPj"> <B> Langage CSML, environnement du csml studio, projet en quadrinôme, 2 semaines, Février 2021 </B> </p>
+                    <p> Réalisation d'un bot de recommandation de films en csml, langage de haut niveau, qui permet de recommander des films en fonction du genre, de la langue, de la popularité...  </p>
+                    <p><b>Contraintes et difficultés :</b> Utilisation d'un langage de haut niveau, composer des requêtes HTTP, connexion à une API</p>
+                    <a href="https://github.com/adatechschool/pc-csml-Bot-MMNF" target="_blank"><button class="Boutonjeu">Voir plus</button> <a target="_blank" href="https://chat.csml.dev/channels/s6hjzncre4na9ydotzqsesmxhho6mrqq"><button>Tester le bot</button></a></a>
+                </div>
+            </div>
+            <div class="card2 card invisible">
+                <div class="infoProjet">
+                    <h2>Projet de site marketplace</h2>
+                    <p class="TechnoPj"> <B>MongoDB Atlas, Express, HTML, Bootstrap, Mongoose, 2 équipes (1 front et 1 back, 6 personnes/équipes), 2 semaines, Mars 2021 </B> </p>
+                    <p> Création d'une marketplace pour vendre des meubles d'occasion avec une page d'accueil, des pages avec le détail des articles proposés, des comptes pour les utilisateurs et administrateurs, page de vente de meubles...</p>
+                    <p><b>Contraintes et difficultés :</b> Création de serveur local avec Express, utilisation d'une base de données, intéractions entre le front et le back, utilisation de Bootstrap, Requête avec API fetch. </p>
+                    <a href="https://github.com/adatechschool/pc-frontback-meublesagogo" target="_blank"><button>Voir plus</button></a>
+                </div>
+                <img class="meuble imgdroite" src="./images/sitevendmeubles.gif" alt="">
+            </div>
+            <div class="card card1 invisible">
+                <img  src="./images/app-birds.PNG" alt="maquette d'application sur les oiseaux">
+                <div class="infoProjet">
+                    <h2>Maquette d'application de présentation d’oiseaux sauvages</h2>
+                    <p class="TechnoPj"> <B> Figma, projet solo, 4 jours, Avril 2020</B> </p>
+                    <p>Création de maquette sur le thème des oiseaux sauvages avec une page d'accueil et une page de présentation d'un oiseau. </p>
+                    <p><b>Contraintes et difficultés :</b> Le contenu de la page d'accueil devait être au minimum de plusieurs choix d’oiseaux, un titre, un menu et la page de présentation devait détaillait un oiseau, la race, la geographie, utilisation de figma, détourer des images. </p>
+                    <a target=_blank href="https://www.figma.com/proto/MT3Gt9MYFDE1OhENBYkjEk/birds-Copy?node-id=26%3A14&scaling=scale-down&page-id=0%3A1"><button>Voir plus</button></a>
+                </div> 
+                
+               
+            </div>
+            <div class="card2 card invisible">
+                <div class="infoProjet">
+                    <h2>Maquette de site de la série Breaking Bad</h2>
+                    <p class="TechnoPj"> <b>Figma, projet binôme (1 page/personne + 1 page en binôme), remote, 4 jours, Juin 2020</b> </p>
+                    <p> Création de maquette sur la série Breaking Bad avec une page d'accueil, une page de présentation des saisons et épisodes ainsi qu'une page sur les personnages. </p>
+                    <p><b>Contraintes et difficultés :</b> Création en binôme et remote , répartition des pages, cohérence entre les pages.</p>
+                    <a href="https://www.figma.com/proto/UxqDFStB7CrdQ9Y3FygPK1/Breaking-Bad?node-id=82%3A2&scaling=min-zoom&page-id=0%3A1" target="_blank"><button class="Boutonjeu">Voir plus</button></a>
+                    
+                </div> 
+                <img class="imgdroite" src="./images/Site-BreakingBad.PNG" alt="">
+            </div>         
+        </div> 
+    </section>
+    <!-- ------------------------ FIN PROJETS ------------------------ -->
+    <!-- ------------------------ CONTACT ------------------------ -->
+    
+
+    <section id="Contact">
+        <div class="contactContainer invisible">
+            <h2>Contact</h2>
+            <p>Je suis actuellement à la recherche d'une alternance d'un an à partir de Juin 2021 et je serai ravie de répondre à toutes vos questions donc n'hésitez pas à me contacter!  </p>
+            <div class="contactButton">
+                <a href="mailto:mthldjanssen@gmail.com"><button>Contact</button></a>
+                <a href="./CV Mathilde JANSSEN.pdf" target="_blank"><button>CV</button></a>
+            </div>
+            <p>Vous pouvez également me retrouver sur les réseaux sociaux!</p>
+            <div class="logoRes">
+                <a href="https://www.linkedin.com/in/mathilde-janssen-9707681b9/"><img src="./images/ph_linkedin-logo-light.svg" alt="logo linkedin"></a>
+                <a href="https://github.com/Mathilde-J"><img src="./images//ant-design_github-outlined.svg" alt="logo github"></a>
+            </div>
+        </div>
+        <footer>
+            <nav class="footer">
+                <span><a href="#Accueil">Accueil</a></span>
+                <span><a href="#Profil">Profil</a></span>
+                <span><a href="#Projets">Projets</a></span>
+                <span><a href="#Contact">Contact</a></span>
+            </nav>
+        </footer>
+    </section>
+    <script src="script.js"></script>      
+</body>
+</html>
